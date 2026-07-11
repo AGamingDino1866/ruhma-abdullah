@@ -1,4 +1,10 @@
-const weddingDate = new Date("2026-11-28T19:30:00+05:00");
+const pageDates = {
+  "day1.html": "2026-11-28T19:30:00+05:00",
+  "DAY2.html": "2026-11-29T20:00:00+05:00",
+  "day3.html": "2026-11-30T19:00:00+05:00"
+};
+const currentPage = window.location.pathname.split("/").pop() || "day1.html";
+const weddingDate = new Date(pageDates[currentPage] || pageDates["day1.html"]);
 
 const invite = document.getElementById("invite");
 const envelope = document.getElementById("envelope");
