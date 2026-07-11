@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+  <title>Ruhma & Abdullah Day 3 Invitation</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;500;600&family=Great+Vibes&family=Playfair+Display:wght@400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <audio id="backgroundMusic" src="music.mp3" loop preload="auto"></audio>
+  <button class="music-toggle" id="musicToggle" type="button" aria-label="Pause background music" hidden>Music On</button>
+  <main class="invite" id="invite">
+    <section class="panel envelope-panel" id="envelopePanel"><div class="envelope" id="envelope"><div class="envelope-pattern"></div><div class="flap flap-top"></div><div class="flap flap-left"></div><div class="flap flap-right"></div><div class="envelope-copy"><p class="tiny">Ruhma & Abdullah</p><h1>Day 3</h1><p class="hint">Tap to open</p></div><button class="seal" id="openInvite" aria-label="Open invitation"><span>R & A</span></button></div></section>
+    <section class="panel hero-panel" id="heroPanel"><div class="sky-glow"></div><div class="floral-arch" aria-hidden="true"><span></span><span></span><span></span><span></span><span></span></div><div class="couple-scene" aria-hidden="true"><div class="aisle"></div><div class="bride"></div><div class="groom"></div></div><div class="hero-text"><p>Day 3 Celebration</p><h2>Ruhma <span>&</span> Abdullah</h2><div class="divider"></div><p class="date-line">November 30, 2026</p></div><button class="scroll-cue" data-scroll="#datePanel">⌄</button></section>
+    <section class="panel date-panel" id="datePanel"><div class="date-card"><p class="eyebrow">Walima Dinner</p><h2>Monday</h2><div class="date-row"><span>November</span><strong>30</strong><span>2026</span></div><p class="time">7:00 PM onwards</p><div class="countdown" id="countdown"><div><strong id="days">00</strong><span>Days</span></div><div><strong id="hours">00</strong><span>Hours</span></div><div><strong id="minutes">00</strong><span>Minutes</span></div><div><strong id="seconds">00</strong><span>Seconds</span></div></div></div><button class="scroll-cue dark" data-scroll="#detailsPanel">⌄</button></section>
+    <section class="panel details-panel" id="detailsPanel"><div class="paper"><div class="corner corner-a"></div><div class="corner corner-b"></div><div class="corner corner-c"></div><div class="corner corner-d"></div><p class="eyebrow">Walima Dinner</p><h2>Ruhma</h2><p class="and">&</p><h2>Abdullah</h2><p class="invitation-text">We would be honored by your presence at the walima dinner as we celebrate this blessed union.</p><p class="dua">بارك الله لكما وبارك عليكما وجمع بينكما في خير</p><p class="dua-translation">May Allah bless you both, shower His blessings upon you, and unite you both in goodness.</p></div><button class="scroll-cue" data-scroll="#mapPanel">⌄</button></section>
+    <section class="panel map-panel" id="mapPanel"><div class="venue-copy"><p class="eyebrow">Venue Details</p><h2>Nano's Home</h2><p>Walima venue details coming soon</p></div><div class="map-frame"><iframe title="Venue map" src="https://www.google.com/maps?q=City%20Public%20School%20Boys%20Branch%20People%20Colony%20Gujranwala&output=embed" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe></div><a class="maps-button" href="https://maps.app.goo.gl/Jq5pKfYpsawZmLxQ8?g_st=awb" target="_blank" rel="noopener">Open in Google Maps</a></section>
+  </main>
+  <script src="script.js"></script>
+</body>
+</html>
